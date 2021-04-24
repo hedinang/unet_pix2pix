@@ -1,0 +1,13 @@
+number
+name
+born
+nguyenquan
+thuongtru
+cmt
+gt&qt
+cancuoc
+dantoc
+tongiao
+note
+create
+dir
