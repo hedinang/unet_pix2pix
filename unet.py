@@ -7,6 +7,7 @@ import os
 import cv2
 import numpy as np
 from PIL import Image
+from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter('runs')
 
@@ -47,7 +48,7 @@ dataset = DocSegDataset('data')
 data = DataLoader(dataset, batch_size=1, shuffle=True)
 epoch = 1000
 step = 0
-for i in range(epoch):
+for i in tqdm(range(epoch)):
     print('start epoch: ', i)
     for color, gray, path in data:
         step += 1
