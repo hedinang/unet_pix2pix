@@ -64,8 +64,8 @@ class UNet2(nn.Module):
         x = self.up3(x, self.P2(x2))
         x = self.up4(x, self.P1(x1))
         x = self.outc(x)
-        return torch.sigmoid(x)
-
+        return  torch.sigmoid(x)
+     
 
 class UNet3(nn.Module):
     def __init__(self, n_channels, n_classes, bilinear=True):
